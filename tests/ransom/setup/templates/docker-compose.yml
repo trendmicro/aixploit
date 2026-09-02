@@ -1,0 +1,21 @@
+name: "sandbox-{host_port}"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: postgres-{model}-{test_id}
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: pguser
+      POSTGRES_PASSWORD: pgpass
+      POSTGRES_DB: pandora
+    ports:
+      - "{host_port}:5432"
+    volumes:
+      - ./pandora/postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pguser -d pandora"]
+      interval: 2s
+      timeout: 5s
+      retries: 30
+      start_period: 5s

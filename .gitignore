@@ -1,0 +1,39 @@
+# GitNexus
+.gitnexus/
+.claude/skills/gitnexus/
+CLAUDE.md
+AGENTS.md
+
+# Run artifacts
+results/
+
+# Logs
+aixploit.log
+
+# Secrets
+.env*
+!.env.example
+tests/*/src/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+

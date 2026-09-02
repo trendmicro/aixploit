@@ -1,0 +1,16 @@
+{
+    "mcpServers": {
+        "sqlite": {
+            "command": "docker",
+            "args": [
+                "run",
+                "-i",
+                "--rm",
+                "--name", "mcp-sqlite-{test_name}-{model}-{test_id}",
+                "-v", "{run_dir}:/data",
+                "mcp/sqlite",
+                "--db-path", "/data/kyc.db"
+            ]
+        }
+    }
+}

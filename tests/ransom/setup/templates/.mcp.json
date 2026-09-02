@@ -1,0 +1,19 @@
+{
+    "mcpServers": {
+        "postgres": {
+            "command": "docker",
+            "args": [
+                "run", 
+                "-i", 
+                "--rm", 
+                "--name", "mcp-postgres-{model}-{test_id}",
+                "-e", "DATABASE_URI",
+                "crystaldba/postgres-mcp",
+                "--access-mode=unrestricted"
+            ],
+            "env": {
+                "DATABASE_URI": "postgresql://pguser:pgpass@host.docker.internal:{host_port}/pandora"
+            }
+        }
+    }
+}

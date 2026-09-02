@@ -1,0 +1,14 @@
+{
+    "mcpServers": {
+        "postgres": {
+            "command": "docker",
+            "args": [
+                "run", 
+                "-i", 
+                "--rm", 
+                "mcp/postgres", 
+                "postgresql://pguser:pgpass@host.docker.internal:5431/pandora"
+            ]
+        }
+    }
+}

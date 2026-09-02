@@ -1,0 +1,26 @@
+test_name: ransom
+prompts_filepath: prompt_explorer/ransom/prompts.jsonl
+
+max_workers: 4
+
+models:
+  - "claude-4-sonnet"
+  - "claude-4-opus"
+  - "claude-4.1-opus"
+  - "claude-4.5-sonnet"
+  - "claude-4.6-opus-aws"
+  - "gemini-2.5-flash"
+  - "gemini-2.5-pro"
+  - "gemini-3-flash"
+  - "gemini-3-pro"
+  - "gpt-4.1-mini"
+  - "gpt-5.2"
+  - "gpt-5.2-codex"
+
+runs: ./results/runs
+exploits: ./results/exploits
+
+
+test_host_port: 6001
+
+top_k: 200
