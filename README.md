@@ -1,7 +1,5 @@
 # AIxploit
 
-[License: MIT]([https://img.shields.io/badge/License-MIT-yellow.svg](https://img.shields.io/badge/License-MIT-yellow.svg))
-
 **AIxploit** is an automated security testing framework for discovering AI-native vulnerabilities in agentic systems. It is useful both for offensive testing against a graybox agent and for model developers who want to measure and improve their safety guardrails against real, end-to-end injection attacks. 
 
 ## Why
